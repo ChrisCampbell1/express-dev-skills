@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+.unlearn {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.unlearn button {
+  color: red;
+}
+	
+li {
+  list-style: none;
+  padding-bottom: 15px;
+}
