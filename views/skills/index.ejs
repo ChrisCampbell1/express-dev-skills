@@ -7,13 +7,15 @@
   <title>Skills Index</title>
 </head>
 <body>
-  <h1>Todos</h1>
+  <h1>Dev Skills</h1>
   <ul>
-    <% skills.forEach(todo => { %>
+    <% skills.forEach(skill => { %>
       <li>
-				<%= skill.text %> 
-				- 
-				<%= skill.done ? 'done' : 'not done' %>
+        <%= skill.name %> 
+        | Type:
+        <%= skill.type %>
+				| Proficiency level:
+				<%= skill.proficiency %>
 			</li>
     <% }) %>
   </ul>

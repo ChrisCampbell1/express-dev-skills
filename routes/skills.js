@@ -5,7 +5,7 @@ const router = Router()
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  res.render('/index', {
+  res.render('skills/index', {
     skills: skills
   })
 })
