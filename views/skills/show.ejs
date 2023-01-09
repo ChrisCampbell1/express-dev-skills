@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <title><%= skill.name %></title>
 </head>
 <body>
-  <h1>Skill Detail</h1>
+  <header>
+    <h1>Skill Detail</h1>
+  </header>
   <a href="/skills/<%= skill._id %>/edit">Edit Skill</a>
-  <h2>Name: <%= skill.name %></h2>
-  <h2>Type: <%= skill.type %></h2>
-  <h2>Proficiency: <%= skill.proficiency %></h2>
+  <h3>Name: <%= skill.name %></h3>
+  <h3>Type: <%= skill.type %></h3>
+  <h3>Proficiency: <%= skill.proficiency %></h3>
 	<a href="/skills">Go back</a>
 </body>
 </html>

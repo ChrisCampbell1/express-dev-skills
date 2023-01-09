@@ -1,10 +1,40 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%;
+}
+
 body {
-  padding: 50px;
+  background-color: lightgray;
+  /* Use a system font, if none are available use an available sans-sarif font */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px, 25px;
+}
+
+header {
+  text-align: center;
 }
 
 a {
-  color: #00B7FF;
+  color: #0b394b;
+}
+
+a:hover {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .unlearn {
@@ -12,6 +42,16 @@ a {
   margin-right: 10px;
 }
 	
+button {
+  border-radius: 7px;
+  color: darkgreen;
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
 .unlearn button {
   color: red;
 }
