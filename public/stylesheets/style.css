@@ -22,10 +22,17 @@ body {
   /* Use a system font, if none are available use an available sans-sarif font */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px, 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   text-align: center;
+}
+
+.center {
+  text-align: center;
+  align-content: center;
 }
 
 a {
@@ -34,7 +41,6 @@ a {
 
 a:hover {
   cursor: pointer;
-  font-weight: bold;
 }
 
 .unlearn {
