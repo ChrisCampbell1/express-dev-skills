@@ -15,24 +15,17 @@
     <input type="text" name="name" value="<%= skill.name%>">
     <select name="type" id="" autocomplete="<%= skill.type %>">
       <option value="Skill Type">Select Skill Type</option>
-      <option value="Front End">Front End</option>
-      <option value="Back End">Back End</option>
-      <option value="Full Stack">Full Stack</option>
+      <option value="Front End" <%= skill.type === "Front End" ? "selected" : ""%>>Front End</option>
+      <option value="Back End" <%= skill.type === "Back End" ? "selected" : ""%>>Back End</option>
+      <option value="Full Stack" <%= skill.type === "Fullstack" ? "selected" : ""%>>Full Stack</option>
     </select>
-    <!-- <input type="text" name="type" placeholder="Skill Type"> -->
-    <!-- <input type="text" name="proficiency" placeholder="Proficiency Level"> -->
     <select name="proficiency" id="">
       <option value="Proficiency">Select Proficiency Level</option>
-      <option value="Low">Low</option>
-      <option value="Medium">Medium</option>
-      <option value="High">High</option>
+      <option value="Low" <%= skill.proficiency === "Low" ? "selected" : ""%>>Low</option>
+      <option value="Medium" <%= skill.proficiency === "Medium" ? "selected" : ""%>>Medium</option>
+      <option value="High" <%= skill.proficiency === "High" ? "selected" : ""%>>High</option>
     </select>
     <button type="submit">Save Skill</button>
-    <p>Current skill stats: <%= skill.name %>
-    | Type:
-    <%= skill.type %>
-    | Proficiency level:
-    <%= skill.proficiency %></p>
   </form>
 </body>
 </html>
